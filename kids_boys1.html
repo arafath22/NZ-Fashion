@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/all.js"></script>
+
+    <link rel="stylesheet" href="css/nzfashion_header_and_footer.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+
+    <!-- <script src="js/modal.js"></script> -->
+
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/modal.js"></script>
+
+
+    <style>
+   
+
+    </style>
+</head>
+<body>
+    <a class="top"></a>
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top navigation_bar"  id="myNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/nz_fashion_logo.png" alt="logo"> 
+        </a>
+        <a class="navbar-brand" href="index.html">NZ Fashion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" id="nav_button">Home</a>
+            </li>
+
+            <!-- START OF DROP DOWNS -->
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Men</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="men_shirts1.html">Shirts</a></li>
+                <li><a class="dropdown-item" href="men_tshirts1.html">T-Shirts</a></li>
+                <li><a class="dropdown-item" href="men_trousers1.html">Trousers</a></li>
+                <li><a class="dropdown-item" href="men_shorts1.html">Shorts</a></li>
+                <li><a class="dropdown-item" href="men_sarongs1.html">Sarongs</a></li>
+              </ul>
+            </li>
+              
+            <li class="nav-item dropdown">  
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Women</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="women_sarees1.html">Sarees</a></li>
+                <li><a class="dropdown-item" href="women_abayas1.html">Abayas</a></li>
+                <li><a class="dropdown-item" href="women_readymade_shalwars1.html">Ready Made Shalwars</a></li>
+                <li><a class="dropdown-item" href="women_shalwar_materials1.html">Shalwar Materials</a></li>
+                <li><a class="dropdown-item" href="women_shawls1.html">Shawls</a></li>
+                <li><a class="dropdown-item" href="women_tops_and_jeans1.html">Tops & Jeans</a></li>
+                <li><a class="dropdown-item" href="women_frocks1.html">Frocks</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kids</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active-dropdown" href="kids_boys1.html">Boys</a></li>
+                <li><a class="dropdown-item" href="kids_girls1.html">Girls</a></li>
+              </ul>
+            </li>
+            <!-- END OF DROPDOWNS -->
+              
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accessories.html">Accessories</a>
+            </li>
+          </ul>
+          <!-- END OF NAVGATION BAR -->
+
+          <!-- SOCIAL MEDIA ICONS -->
+          <div class="sm_logo_pack">
+            <!-- <a class="nav-item" href="about_us.html"><img src="images/logo.png" alt="" id="sm_logo"></a>
+            <a class="nav-item" href="about_us.html"><img src="images/logo.png" alt="" id="sm_logo"></a>
+            <a class="nav-item" href="about_us.html"><img src="images/logo.png" alt="" id="sm_logo"></a> -->
+            <a href="#" ><i class="fab fa-whatsapp" id="sm_logo"></i></a>
+              <a href="#" ><i class="fab fa-facebook"  id="sm_logo" ></i></a>
+              <a href="#" ><i class="fa-brands fa-instagram"  id="sm_logo"></i></a>
+              
+
+              <!-- <a href="#" ><i class="fab fa-whatsapp" id="sm_logo" style="padding: 2px 3px; background-color: green; border-radius: 25%;"></i></a>
+              <a href="#" ><i class="fab fa-facebook"  id="sm_logo" style="padding: 1px; background-color: blue; color: white; border-radius: 30%;"></i></a>
+              <a href="#" ><i class="fa-brands fa-instagram"  id="sm_logo" style="padding: 1px 2px; border-radius: 25%; background: radial-gradient(circle farthest-corner at 35% 90%, #fec564,
+               transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), 
+               radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient
+               (ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 
+               30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);"></i></a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- GO TO TOP BUTTON -->
+    <a href="#top"><button class="btn_go_to_top fixed-bottom"><i class="fa-solid fa-arrow-up "></i></button></a>
+    
+    <!-- <h1 id="contents">PAGE 1</h1> -->
+    <ul class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="kids_boys1.html">Boys Gallery 1</a></li>
+    </ul>
+
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-3 col-11 modal_images">
+       
+           
+           <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-1 col-md-1 col-1 badges"  >
+                <div class="col-lg-12 col-md-12 col-12 size_badges_disabled">XS</div>
+                <div class="col-lg-12 col-md-12 col-12 size_badges">S</div>
+                <div class="col-lg-12 col-md-12 col-12 size_badges">M</div>
+                <div class="col-lg-12 col-md-12 col-12 size_badges">L</div>
+                <div class="col-lg-12 col-md-12 col-12 size_badges_disabled">XL</div>
+                <div class="col-lg-12 col-md-12 col-12 size_badges_disabled">XXL</div>
+               
+              </div>
+              <div class="col-lg-11 col-md-11 col-11">
+                <img id="myImg1" class="images" src="images/kids/boys/kids_boys1.jpg" alt="Long Sleeve Casual Shirt" style="width:100%;" onclick="displayModal('1')">
+              </div>
+             </div>
+           </div>
+         
+          
+          <div class="container-fluid products">
+            <div class="row">
+              <div class="col-lg-9 col-md-9 col-9 product_desc">
+                <h6>Long Sleeved Graphich Hoodie (Age:8-12)</h6>
+                <h5>RS <strike>2,080.00</strike> 1,890.00</h5>
+              </div>
+              <div class="col-lg-3 col-md-3 col-3">
+                <i id="heart1" class="fas fa-heart hearts"  onclick="changeColor('1')"></i>  
+              </div>
+            </div>
+          </div>
+            
+          
+           
+            
+
+            <!-- The Modal -->
+            <div id="myModal1" class="modal myModals"><!--modal1-->
+
+
+              <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-2 col-md-2 col-4">
+                    <i id="modal_heart1" class="fa-solid fa-heart modal_hearts" style="color: white;" onclick="changeColor('1')"></i>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-4">
+                      <!-- The Close Button -->
+                      <span id="close_btn" class="close1">&times;</span>
+                  </div>
+                </div>
+
+               <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img1">
+                    
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    
+                    <div id="caption1" class="captions">
+                      <h3 class="modal_product_name">Long Sleeved Graphich Hoodie PK_B001</h3>
+                      <p class="modal_product_desc"> Long sleeve Single-jersey graphic hoodie for boys between age of 8-12</p>
+                      <h5 class="modal_availability" >Availability: <i  class="modal_availability" style="color: rgb(14, 211, 14);">in-stock</i></h5>
+
+                      <div class="row">
+
+                        <div class="col-lg-6 col-md-6 col-12 modal_size_options">
+                          <h5 class="">Size Options</h5>
+                          <!-- <p class="modal_badges_disabled">XS</p>
+                          <p class="modal_badges">S</p>
+                          <p class="modal_badges">M</p>
+                          <p class="modal_badges">L</p>
+                          <p class="modal_badges">XL</p>
+                          <p class="modal_badges">XXL</p><br> -->
+                          <div class="row" style="margin-left: 5px;">
+                            <div class="col-lg-2 col-md-2 col-2 modal_badges_disabled">XS</div>
+                            <div class="col-lg-2 col-md-2 col-2 modal_badges">S</div>
+                            <div class="col-lg-2 col-md-2 col-2 modal_badges">M</div>
+                            <div class="col-lg-2 col-md-2 col-2 modal_badges">L</div>
+                            <div class="col-lg-2 col-md-2 col-2 modal_badges_disabled">XL</div>
+                            <div class="col-lg-2 col-md-2 col-2 modal_badges_disabled">XXL</div>
+                          </div>
+
+
+                          
+                          <a href="#" class="size_guide">Size Guide</a>
+                                                    
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 modal_color_options;">
+                          <h5 class="" >Color Options</h5>
+                          
+                          <div class="row">
+                            <div class="col-lg-2 col-md-2 col-2 modal_colors_active" style="background-color: gray;" id="color1"></div>
+                            <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-color: blueviolet;" id="color2"></div>
+                            <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-color: aqua;" id="color3"></div>
+                           
+                           
+                          </div>
+                          
+                                                    
+                        </div>
+
+
+                      </div>
+
+
+
+                      <p class="disclaimer">Product image may differ to actual due to photographic lighting</p>
+                    </div> <!--caption1-->
+                  </div>
+                 
+                </div>
+
+              </div><!--END OF CONTAINER-->
+
+
+            </div><!--END OF MODAL-->
+
+
+        </div> <!--ENND OF PRODUCT 1-->
+
+
+
+        <div class="col-lg-3 col-md-3 col-11 modal_images">
+       
+           
+          <div class="container-fluid">
+           <div class="row">
+             <div class="col-lg-1 col-md-1 col-1 badges"  >
+               <div class="col-lg-12 col-md-12 col-12 size_badges_disabled">XS</div>
+               <div class="col-lg-12 col-md-12 col-12 size_badges">S</div>
+               <div class="col-lg-12 col-md-12 col-12 size_badges">M</div>
+               <div class="col-lg-12 col-md-12 col-12 size_badges">L</div>
+               <div class="col-lg-12 col-md-12 col-12 size_badges">XL</div>
+               <div class="col-lg-12 col-md-12 col-12 size_badges_disabled">XXL</div>
+              
+             </div>
+             <div class="col-lg-11 col-md-11 col-11">
+               <img id="myImg2" class="images" src="images/kids/boys/kids_boys2.jpg" alt="" style="width:100%;" onclick="displayModal('2')">
+             </div>
+            </div>
+          </div>
+        
+         
+         <div class="container-fluid products">
+           <div class="row">
+             <div class="col-lg-9 col-md-9 col-9 product_desc">
+               <h6>Boys Graphic Printed T-shirt <br>(Age: 2-7)</h6>
+               <h5>RS <strike>979.00</strike> 890.00</h5>
+             </div>
+             <div class="col-lg-3 col-md-3 col-3">
+               <i id="heart2" class="fas fa-heart hearts"  onclick="changeColor('2')"></i>  
+             </div>
+           </div>
+         </div>
+           
+         
+          
+           
+
+           <!-- The Modal -->
+           <div id="myModal2" class="modal myModals"><!--modal1-->
+
+
+             <div class="container">
+               
+               <div class="row">
+                 <div class="col-lg-2 col-md-2 col-4">
+                   <i id="modal_heart2" class="fa-solid fa-heart modal_hearts" style="color: white;" onclick="changeColor('2')"></i>
+                 </div>
+                 <div class="col-lg-2 col-md-2 col-4">
+                     <!-- The Close Button -->
+                     <span id="close_btn" class="close2">&times;</span>
+                 </div>
+               </div>
+
+              <div class="row">
+                 <div class="col-lg-4 col-md-4 col-12">
+                   <!-- Modal Content (The Image) -->
+                   <img class="modal-content" id="img2">
+                   
+                 </div>
+                 <div class="col-lg-8 col-md-8 col-12">
+                   
+                   <div id="caption2" class="captions">
+                     <h3 class="modal_product_name">Boys Graphic Printed T-shirt PK_B002</h3>
+                     <p class="modal_product_desc"> Comfortable cotton casual t-shirts for boys between age of 2-7</p>
+                     <h5 class="modal_availability" >Availability: <i  class="modal_availability" style="color: rgb(14, 211, 14);">in-stock</i> (Kandy)</h5>
+
+                     <div class="row">
+
+                       <div class="col-lg-6 col-md-6 col-12 modal_size_options">
+                         <h5 class="">Size Options</h5>
+                         <!-- <p class="modal_badges_disabled">XS</p>
+                         <p class="modal_badges">S</p>
+                         <p class="modal_badges">M</p>
+                         <p class="modal_badges">L</p>
+                         <p class="modal_badges">XL</p>
+                         <p class="modal_badges">XXL</p><br> -->
+                         <div class="row" style="margin-left: 5px;">
+                           <div class="col-lg-2 col-md-2 col-2 modal_badges_disabled">XS</div>
+                           <div class="col-lg-2 col-md-2 col-2 modal_badges">S</div>
+                           <div class="col-lg-2 col-md-2 col-2 modal_badges">M</div>
+                           <div class="col-lg-2 col-md-2 col-2 modal_badges">L</div>
+                           <div class="col-lg-2 col-md-2 col-2 modal_badges">XL</div>
+                           <div class="col-lg-2 col-md-2 col-2 modal_badges_disabled">XXL</div>
+                         </div>
+
+
+                         
+                         <a href="#" class="size_guide">Size Guide</a>
+                                                   
+                       </div>
+                       <div class="col-lg-6 col-md-6 col-12 modal_color_options;">
+                         <h5 class="" >Color Options</h5>
+                         
+                         <div class="row">
+                           <div class="col-lg-2 col-md-2 col-2 modal_colors_active" style="background-color: rgb(234, 118, 60);" id="color1"></div>
+                           <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-color: blueviolet;" id="color2"></div>
+                           <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-color: cornflowerblue;" id="color3"></div>
+                           <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-color: burlywood;" id="color4"></div>
+                           
+                          
+                         </div>
+                         
+                                                   
+                       </div>
+
+
+                     </div>
+
+
+
+                     <p class="disclaimer">Product image may differ to actual due to photographic lighting</p>
+                   </div> <!--caption2-->
+                 </div>
+                
+               </div>
+
+             </div><!--END OF CONTAINER-->
+
+
+           </div><!--END OF MODAL-->
+
+
+       </div> <!--ENND OF PRODUCT 2-->
+    
+
+       <div class="col-lg-3 col-md-3 col-11 modal_images">
+       
+           
+        <div class="container-fluid">
+         <div class="row">
+           <div class="col-lg-1 col-md-1 col-1 badges"  >
+             <div class="col-lg-12 col-md-12 col-12 size_badges">XS</div>
+             <div class="col-lg-12 col-md-12 col-12 size_badges">S</div>
+             <div class="col-lg-12 col-md-12 col-12 size_badges">M</div>
+             <div class="col-lg-12 col-md-12 col-12 size_badges">L</div>
+             <div class="col-lg-12 col-md-12 col-12 size_badges">XL</div>
+             <div class="col-lg-12 col-md-12 col-12 size_badges">XXL</div>
+            
+           </div>
+           <div class="col-lg-11 col-md-11 col-11">
+             <img id="myImg3" class="images" src="images/kids/boys/kids_boys3.jpg" alt="" style="width:100%;" onclick="displayModal('3')">
+           </div>
+          </div>
+        </div>
+      
+       
+       <div class="container-fluid products">
+         <div class="row">
+           <div class="col-lg-9 col-md-9 col-9 product_desc">
+             <h6>Boys Polo T-Shirt (Age: 4-7)</h6>
+             <h5>RS <strike>1,100.00</strike> 990.00</h5>
+           </div>
+           <div class="col-lg-3 col-md-3 col-3">
+             <i id="heart3" class="fas fa-heart hearts"  onclick="changeColor('3')"></i>  
+           </div>
+         </div>
+       </div>
+         
+       
+        
+         
+
+         <!-- The Modal -->
+         <div id="myModal3" class="modal myModals"><!--modal3-->
+
+
+           <div class="container">
+             
+             <div class="row">
+               <div class="col-lg-2 col-md-2 col-4">
+                 <i id="modal_heart3" class="fa-solid fa-heart modal_hearts" style="color: white;" onclick="changeColor('3')"></i>
+               </div>
+               <div class="col-lg-2 col-md-2 col-4">
+                   <!-- The Close Button -->
+                   <span id="close_btn" class="close3">&times;</span>
+               </div>
+             </div>
+
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-12">
+                 <!-- Modal Content (The Image) -->
+                 <img class="modal-content" id="img3">
+                 
+               </div>
+               <div class="col-lg-8 col-md-8 col-12">
+                 
+                 <div id="caption3" class="captions">
+                   <h3 class="modal_product_name">Boys Polo T-Shirt PK_B003</h3>
+                   <p class="modal_product_desc">Stylish Boys Casul Polo T-Shirt for boys of age 4-7</p>
+                   <h5 class="modal_availability" >Availability: <i  class="modal_availability" style="color: rgb(14, 211, 14);">in-stock</i> (Colombo)</h5>
+
+                   <div class="row">
+
+                     <div class="col-lg-6 col-md-6 col-12 modal_size_options">
+                       <h5 class="">Size Options</h5>
+                       <!-- <p class="modal_badges_disabled">XS</p>
+                       <p class="modal_badges">S</p>
+                       <p class="modal_badges">M</p>
+                       <p class="modal_badges">L</p>
+                       <p class="modal_badges">XL</p>
+                       <p class="modal_badges">XXL</p><br> -->
+                       <div class="row" style="margin-left: 5px;">
+                         <div class="col-lg-2 col-md-2 col-2 modal_badges">XS</div>
+                         <div class="col-lg-2 col-md-2 col-2 modal_badges">S</div>
+                         <div class="col-lg-2 col-md-2 col-2 modal_badges">M</div>
+                         <div class="col-lg-2 col-md-2 col-2 modal_badges">L</div>
+                         <div class="col-lg-2 col-md-2 col-2 modal_badges">XL</div>
+                         <div class="col-lg-2 col-md-2 col-2 modal_badges">XXL</div>
+                       </div>
+
+
+                       
+                       <a href="#" class="size_guide">Size Guide</a>
+                                                 
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-12 modal_color_options;">
+                       <h5 class="" >Color Options</h5>
+                       
+                       <div class="row">
+                         <div class="col-lg-2 col-md-2 col-2 modal_colors_active" style="background-image: linear-gradient(to right, black 50%, maroon 50%);" id="color1"></div>
+                         <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-image: linear-gradient(to right, black 50%, cornflowerblue 50%);" id="color2"></div>
+                         <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-image: linear-gradient(to right, black 50%,white 50%);" id="color1" id="color3"></div>
+                         <!-- <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color4"></div> -->
+                         <!-- <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color5"></div>
+                         <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color6"></div> -->
+                        
+                       </div>
+                       
+                                                 
+                     </div>
+
+
+                   </div>
+
+
+
+                   <p class="disclaimer">Product image may differ to actual due to photographic lighting</p>
+                 </div> <!--caption3-->
+               </div>
+              
+             </div>
+
+           </div><!--END OF CONTAINER-->
+
+
+         </div><!--END OF MODAL-->
+
+
+     </div> <!--ENND OF PRODUCT 3-->
+
+
+
+  </div> <!--END OF ROW-->
+
+  <div class="row">
+
+    <div class="col-lg-3 col-md-3 col-11 modal_images">
+       
+           
+      <div class="container-fluid">
+       <div class="row">
+         <div class="col-lg-1 col-md-1 col-1 badges"  >
+           <div class="col-lg-12 col-md-12 col-12 size_badges_disabled">XS</div>
+           <div class="col-lg-12 col-md-12 col-12 size_badges_disabled">S</div>
+           <div class="col-lg-12 col-md-12 col-12 size_badges">M</div>
+           <div class="col-lg-12 col-md-12 col-12 size_badges">L</div>
+           <div class="col-lg-12 col-md-12 col-12 size_badges">XL</div>
+           <div class="col-lg-12 col-md-12 col-12 size_badges">XXL</div>
+          
+         </div>
+         <div class="col-lg-11 col-md-11 col-11">
+           <img id="myImg4" class="images" src="images/kids/boys/kids_boys4.jpg" alt="" style="width:100%;" onclick="displayModal('4')">
+         </div>
+        </div>
+      </div>
+    
+     
+     <div class="container-fluid products">
+       <div class="row">
+         <div class="col-lg-9 col-md-9 col-9 product_desc">
+           <h6>Boys Graphic Printed T-shirt <br>(Age: 2-7)</h6>
+           <h5>RS <strike>979.00</strike> 890.00</h5>
+         </div>
+         <div class="col-lg-3 col-md-3 col-3">
+           <i id="heart4" class="fas fa-heart hearts"  onclick="changeColor('4')"></i>  
+         </div>
+       </div>
+     </div>
+       
+     
+      
+       
+
+       <!-- The Modal -->
+       <div id="myModal4" class="modal myModals"><!--modal3-->
+
+
+         <div class="container">
+           
+           <div class="row">
+             <div class="col-lg-2 col-md-2 col-4">
+               <i id="modal_heart4" class="fa-solid fa-heart modal_hearts" style="color: white;" onclick="changeColor('4')"></i>
+             </div>
+             <div class="col-lg-2 col-md-2 col-4">
+                 <!-- The Close Button -->
+                 <span id="close_btn" class="close4">&times;</span>
+             </div>
+           </div>
+
+          <div class="row">
+             <div class="col-lg-4 col-md-4 col-12">
+               <!-- Modal Content (The Image) -->
+               <img class="modal-content" id="img4">
+               
+             </div>
+             <div class="col-lg-8 col-md-8 col-12">
+               
+               <div id="caption4" class="captions">
+                 <h3 class="modal_product_name">Boys Graphic Printed T-Shirt PK_B004</h3>
+                 <p class="modal_product_desc"> High quality cotton boys t-shirts.</p>
+                 <h5 class="modal_availability" >Availability: <i  class="modal_availability" style="color: rgb(14, 211, 14);">in-stock</i></h5>
+
+                 <div class="row">
+
+                   <div class="col-lg-6 col-md-6 col-12 modal_size_options">
+                     <h5 class="">Size Options</h5>
+                     <!-- <p class="modal_badges_disabled">XS</p>
+                     <p class="modal_badges">S</p>
+                     <p class="modal_badges">M</p>
+                     <p class="modal_badges">L</p>
+                     <p class="modal_badges">XL</p>
+                     <p class="modal_badges">XXL</p><br> -->
+                     <div class="row" style="margin-left: 5px;">
+                       <div class="col-lg-2 col-md-2 col-2 modal_badges_disabled">XS</div>
+                       <div class="col-lg-2 col-md-2 col-2 modal_badges_disabled">S</div>
+                       <div class="col-lg-2 col-md-2 col-2 modal_badges">M</div>
+                       <div class="col-lg-2 col-md-2 col-2 modal_badges">L</div>
+                       <div class="col-lg-2 col-md-2 col-2 modal_badges">XL</div>
+                       <div class="col-lg-2 col-md-2 col-2 modal_badges">XXL</div>
+                     </div>
+
+
+                     
+                     <a href="#" class="size_guide">Size Guide</a>
+                                               
+                   </div>
+                   <div class="col-lg-6 col-md-6 col-12 modal_color_options;">
+                     <h5 class="" >Color Options</h5>
+                     
+                     <div class="row">
+                       <div class="col-lg-2 col-md-2 col-2 modal_colors_active" style="background-color: whitesmoke;" id="color1"></div>
+                       <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-color: black;" id="color2"></div>
+                       <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-color: red;" id="color3"></div>
+                       <!-- <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color4"></div>
+                       <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color5"></div>
+                       <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color6"></div> -->
+                      
+                     </div>
+                     
+                                               
+                   </div>
+
+
+                 </div>
+
+
+
+                 <p class="disclaimer">Product image may differ to actual due to photographic lighting</p>
+               </div> <!--caption4-->
+             </div>
+            
+           </div>
+
+         </div><!--END OF CONTAINER-->
+
+
+       </div><!--END OF MODAL-->
+
+
+   </div> <!--ENND OF PRODUCT 4-->
+
+
+
+
+   <div class="col-lg-3 col-md-3 col-11 modal_images">
+       
+           
+    <div class="container-fluid">
+     <div class="row">
+       <div class="col-lg-1 col-md-1 col-1 badges"  >
+         <div class="col-lg-12 col-md-12 col-12 size_badges">XS</div>
+         <div class="col-lg-12 col-md-12 col-12 size_badges">S</div>
+         <div class="col-lg-12 col-md-12 col-12 size_badges">M</div>
+         <div class="col-lg-12 col-md-12 col-12 size_badges">L</div>
+         <div class="col-lg-12 col-md-12 col-12 size_badges">XL</div>
+         <div class="col-lg-12 col-md-12 col-12 size_badges">XXL</div>
+        
+       </div>
+       <div class="col-lg-11 col-md-11 col-11">
+         <img id="myImg5" class="images" src="images/kids/boys/kids_boys5.jpg" alt="" style="width:100%;" onclick="displayModal('5')">
+       </div>
+      </div>
+    </div>
+  
+   
+   <div class="container-fluid products">
+     <div class="row">
+       <div class="col-lg-9 col-md-9 col-9 product_desc">
+         <h6>Long Sleeved Graphic Printed T-Shirt <br>(Age: 2 - 24 Months)</h6>
+         <h5>RS <strike>1,200.00</strike> 1,080.00</h5>
+       </div>
+       <div class="col-lg-3 col-md-3 col-3">
+         <i id="heart5" class="fas fa-heart hearts"  onclick="changeColor('5')"></i>  
+       </div>
+     </div>
+   </div>
+     
+   
+    
+     
+
+     <!-- The Modal -->
+     <div id="myModal5" class="modal myModals"><!--modal3-->
+
+
+       <div class="container">
+         
+         <div class="row">
+           <div class="col-lg-2 col-md-2 col-4">
+             <i id="modal_heart5" class="fa-solid fa-heart modal_hearts" style="color: white;" onclick="changeColor('5')"></i>
+           </div>
+           <div class="col-lg-2 col-md-2 col-4">
+               <!-- The Close Button -->
+               <span id="close_btn" class="close5">&times;</span>
+           </div>
+         </div>
+
+        <div class="row">
+           <div class="col-lg-4 col-md-4 col-12">
+             <!-- Modal Content (The Image) -->
+             <img class="modal-content" id="img5">
+             
+           </div>
+           <div class="col-lg-8 col-md-8 col-12">
+             
+             <div id="caption5" class="captions">
+               <h3 class="modal_product_name">Long Sleeved Graphic Printed T-Shirt PK_B005</h3>
+               <p class="modal_product_desc"> Cotton t-shirt for babies with the age of 2-24 months</p>
+               <h5 class="modal_availability" >Availability: <i  class="modal_availability" style="color: rgb(14, 211, 14);">in-stock</i></h5>
+
+               <div class="row">
+
+                 <div class="col-lg-6 col-md-6 col-12 modal_size_options">
+                   <h5 class="">Size Options</h5>
+                   <!-- <p class="modal_badges_disabled">XS</p>
+                   <p class="modal_badges">S</p>
+                   <p class="modal_badges">M</p>
+                   <p class="modal_badges">L</p>
+                   <p class="modal_badges">XL</p>
+                   <p class="modal_badges">XXL</p><br> -->
+                   <div class="row" style="margin-left: 5px;">
+                     <div class="col-lg-2 col-md-2 col-2 modal_badges">XS</div>
+                     <div class="col-lg-2 col-md-2 col-2 modal_badges">S</div>
+                     <div class="col-lg-2 col-md-2 col-2 modal_badges">M</div>
+                     <div class="col-lg-2 col-md-2 col-2 modal_badges">L</div>
+                     <div class="col-lg-2 col-md-2 col-2 modal_badges">XL</div>
+                     <div class="col-lg-2 col-md-2 col-2 modal_badges">XXL</div>
+                   </div>
+
+
+                   
+                   <a href="#" class="size_guide">Size Guide</a>
+                                             
+                 </div>
+                 <div class="col-lg-6 col-md-6 col-12 modal_color_options;">
+                   <h5 class="" >Color Options</h5>
+                   
+                   <div class="row">
+                     <div class="col-lg-2 col-md-2 col-2 modal_colors_active" style="background-color: rgb(12, 206, 255);" id="color1"></div>
+                     <div class="col-lg-2 col-md-2 col-2 modal_colors" style="background-color: rgb(251, 91, 118);" id="color2"></div>
+                     <!-- <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color3"></div>
+                     <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color4"></div>
+                     <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color5"></div>
+                     <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color6"></div> -->
+                    
+                   </div>
+                   
+                                             
+                 </div>
+
+
+               </div>
+
+
+
+               <p class="disclaimer">Product image may differ to actual due to photographic lighting</p>
+             </div> <!--caption5-->
+           </div>
+          
+         </div>
+
+       </div><!--END OF CONTAINER-->
+
+
+     </div><!--END OF MODAL-->
+
+
+ </div> <!--ENND OF PRODUCT 5-->
+
+
+
+
+
+ <div class="col-lg-3 col-md-3 col-11 modal_images">
+       
+           
+  <div class="container-fluid">
+   <div class="row">
+     <div class="col-lg-1 col-md-1 col-1 badges"  >
+       <div class="col-lg-12 col-md-12 col-12 size_badges">XS</div>
+       <div class="col-lg-12 col-md-12 col-12 size_badges">S</div>
+       <div class="col-lg-12 col-md-12 col-12 size_badges">M</div>
+       <div class="col-lg-12 col-md-12 col-12 size_badges">L</div>
+       <div class="col-lg-12 col-md-12 col-12 size_badges">XL</div>
+       <div class="col-lg-12 col-md-12 col-12 size_badges">XXL</div>
+      
+     </div>
+     <div class="col-lg-11 col-md-11 col-11">
+       <img id="myImg6" class="images" src="images/kids/boys/kids_boys6.jpg" alt="" style="width:100%;" onclick="displayModal('6')">
+     </div>
+    </div>
+  </div>
+
+ 
+ <div class="container-fluid products">
+   <div class="row">
+     <div class="col-lg-9 col-md-9 col-9 product_desc">
+       <h6>Boys cotton shorts (Age: 2-5)</h6>
+       <h5>RS <strike>946.00</strike> 860.00</h5>
+     </div>
+     <div class="col-lg-3 col-md-3 col-3">
+       <i id="heart6" class="fas fa-heart hearts"  onclick="changeColor('6')"></i>  
+     </div>
+   </div>
+ </div>
+   
+ 
+  
+   
+
+   <!-- The Modal -->
+   <div id="myModal6" class="modal myModals"><!--modal3-->
+
+
+     <div class="container">
+       
+       <div class="row">
+         <div class="col-lg-2 col-md-2 col-4">
+           <i id="modal_heart6" class="fa-solid fa-heart modal_hearts" style="color: white;" onclick="changeColor('6')"></i>
+         </div>
+         <div class="col-lg-2 col-md-2 col-4">
+             <!-- The Close Button -->
+             <span id="close_btn" class="close6">&times;</span>
+         </div>
+       </div>
+
+      <div class="row">
+         <div class="col-lg-4 col-md-4 col-12">
+           <!-- Modal Content (The Image) -->
+           <img class="modal-content" id="img6">
+           
+         </div>
+         <div class="col-lg-8 col-md-8 col-12">
+           
+           <div id="caption6" class="captions">
+             <h3 class="modal_product_name">Boys Cotton Shorts PK_B006</h3>
+             <p class="modal_product_desc">Comfortable Cotton Shorts for kids between age 2-5</p>
+             <h5 class="modal_availability" >Availability: <i  class="modal_availability" style="color: rgb(14, 211, 14);">in-stock</i></h5>
+
+             <div class="row">
+
+               <div class="col-lg-6 col-md-6 col-12 modal_size_options">
+                 <h5 class="">Size Options</h5>
+                 <!-- <p class="modal_badges_disabled">XS</p>
+                 <p class="modal_badges">S</p>
+                 <p class="modal_badges">M</p>
+                 <p class="modal_badges">L</p>
+                 <p class="modal_badges">XL</p>
+                 <p class="modal_badges">XXL</p><br> -->
+                 <div class="row" style="margin-left: 5px;">
+                   <div class="col-lg-2 col-md-2 col-2 modal_badges">XS</div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_badges">S</div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_badges">M</div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_badges">L</div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_badges">XL</div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_badges">XXL</div>
+                 </div>
+
+
+                 
+                 <a href="#" class="size_guide">Size Guide</a>
+                                           
+               </div>
+               <div class="col-lg-6 col-md-6 col-12 modal_color_options;">
+                 <!-- <h5 class="" >Color Options</h5> -->
+                 
+                 <!-- <div class="row">
+                   <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color1"></div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color2"></div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color3"></div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color4"></div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color5"></div>
+                   <div class="col-lg-2 col-md-2 col-2 modal_colors" id="color6"></div>
+                  
+                 </div> -->
+                 
+                                           
+               </div>
+
+
+             </div>
+
+
+
+             <p class="disclaimer">Product image may differ to actual due to photographic lighting</p>
+           </div> <!--caption6-->
+         </div>
+        
+       </div>
+
+     </div><!--END OF CONTAINER-->
+
+
+   </div><!--END OF MODAL-->
+
+
+</div> <!--ENND OF PRODUCT 6-->
+
+
+
+
+ 
+
+  </div>
+
+  
+
+   
+
+          <!-- GALLERY PAGE NUMBERS -->
+          <div class="gallery_num">
+            <a href="#"><button class="btn btn_previous_next float-start disabled"><i class="fa-solid fa-chevron-left"></i></button></a>
+            <a href="kids_boys1.html" class="num active" >1</a>
+            <a href="kids_boys2.html" class="num" >2</a>
+            <!-- <a href="men_shirts3.html" class="num" >3</a> -->
+            <!-- <a href="" class="num" >4</a> -->
+            <a href="kids_boys2.html"><button class="btn btn_previous_next float-end"><i class="fa-solid fa-chevron-right"></i></button></a>
+            <!-- <button ><a href="men_shirts2.html"><i class="fa-solid fa-arrow-right"></i></a></button> -->
+          </div>
+    </div><!--END OF CONTAINER-->
+
+
+    
+
+
+
+
+
+
+    <!-- GALLERY -->
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 shirts_gallery">
+               <div class="image">
+                <img src="images/background_image1.webp" alt="" height="100%" width="100%">
+                
+               </div>
+
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 shirts_gallery">
+                <img src="images/background_image1.webp" alt="" height="100%" width="100%">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 shirts_gallery">
+                <img src="images/background_image1.webp" alt="" height="100%" width="100%">
+            </div> 
+          </div>
+        </div>-->
+
+            <!-- MODAL START -->
+
+            <div class="container-fluid footer">
+              <div class="row">
+        
+                <div class="brand col-lg-3 col-md-3 col-9">
+                  <img src="images/logo.png" alt="" class="footer_logo" id="brand">
+                  <h3 class="display-5" href="index.html" id="brand">NZ Fashion</h3>
+                </div>
+                <hr>
+                
+              </div>
+              
+              
+                <!-- <hr style="margin:30px 100px "> INLINE CSS -->
+        
+        
+              <div class="row footer_columns">
+        
+                <div class="col-lg-3 col-md-3 col-12">
+                  <h3 class="footer_col_heading">Categories</h3>
+                  <ul>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle list_item" href="#" role="button" data-bs-toggle="dropdown"  id="footer_col_items">Men</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="men_shirts1.html">Shirts</a></li>
+                        <li><a class="dropdown-item" href="men_tshirts1.html">T-Shirts</a></li>
+                        <li><a class="dropdown-item" href="men_trousers1.html">Trousers</a></li>
+                        <li><a class="dropdown-item" href="men_shorts1.html">Shorts</a></li>
+                        <li><a class="dropdown-item" href="men_sarongs1.html">Sarongs</a></li>
+                      </ul>
+                    </li>
+                      
+                    <li class="dropdown">  
+                      <a class="dropdown-toggle list_item" href="#" role="button" data-bs-toggle="dropdown" id="footer_col_items">Women</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="women_sarees1.html">Sarees</a></li>
+                        <li><a class="dropdown-item" href="women_abayas1.html">Abayas</a></li>
+                        <li><a class="dropdown-item" href="women_readymade_shalwars1.html">Ready Made Shalwars</a></li>
+                        <li><a class="dropdown-item" href="women_shalwar_materials1.html">Shalwar Materials</a></li>
+                        <li><a class="dropdown-item" href="women_shawls1.html">Shawls</a></li>
+                        <li><a class="dropdown-item" href="women_tops_and_jeans1.html">Tops & Jeans</a></li>
+                        <li><a class="dropdown-item" href="women_frocks1.html">Frocks</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle list_item" href="#" role="button" data-bs-toggle="dropdown" id="footer_col_items">Kids</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="kids_boys1.html">Boys</a></li>
+                        <li><a class="dropdown-item" href="kids_girls1.html">Girls</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                </div>
+        
+                <div class="col-lg-3 col-md-3 col-12">
+                  <h3 class="footer_col_heading">Quick Links</h3>
+                  <ul>
+                    <li><a href="sign_up.html" target="_blank" id="footer_col_items" class="list_item">Create an account</a></li>
+                   <li><a href="about.html" id="footer_col_items" class="list_item">About Us</a></li>
+                   <li><a href="contact.html" id="footer_col_items" class="list_item">Contact Us</a></li>
+                   <!-- <li><a href="" id="footer_col_items"></a></li> -->
+                  </ul>
+                  
+                </div>
+        
+                <div class="col-lg-3 col-md-3 col-12" >
+                  <h3 class="footer_col_heading">Connect With Us</h3>
+                  <ul>
+                   <li class="list_item">Contact Us through,</li>
+                      <a href="#" id="footer_col_items" ><i class="fab fa-whatsapp list_item" id="footer_fa_icons"></i></a>
+                      <a href="#" id="footer_col_items" ><i class="fab fa-facebook list_item"  id="footer_fa_icons"></i></a>
+                      <a href="#" id="footer_col_items" ><i class="fa-brands fa-instagram list_item"  id="footer_fa_icons"></i></a>
+                  
+                    <br>
+                    <br>
+                  <li class="list_item">Visit Us, </li>
+                    <li><i class="fas fa-store-alt list_item" id="footer_fa_icons "></i> No 11, Main Road, <strong>KANDY</strong><br></li>
+                    <li><i class="fas fa-store-alt list_item" id="footer_fa_icons "></i> No 118, 7th Street, <strong>COLOMBO</strong><br></li>
+                   
+                 
+                   <!-- <li><a href="" id="footer_col_items"></a></li> -->
+                  </ul>
+                  
+                </div>
+                <div class="col-lg-3 col-md-3 col-12" >
+                  <h3 class="footer_col_heading">Account Settings</h3>
+                  <ul>
+                   <li><a href="#" id="footer_col_items" class="list_item">Account Info</a></li>
+                   <li><a href="#" id="footer_col_items" class="list_item">Change password</a></li>
+                   <li><a href="#" id="footer_col_items" class="list_item">Wishlists</a></li>
+                   <!-- <li><a href="#" id="footer_col_items" class="list_item">Account Info</a></li> -->
+                  </ul>
+                  
+                </div>
+                
+                <!-- <hr style="margin:30px 100px  "> INLINE CSS -->
+        
+              </div><!--end of row-->
+        
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-12">
+                  <h3 class="footer_col_heading">Opening Hours</h3>
+                  <ul>
+                   <li class="list_item"><i class="far fa-clock" id="footer_fa_icons"></i>Weekdays: 08:00 a.m. - 10:30 p.m.</li>
+                   <li class="list_item"><i class="far fa-clock" id="footer_fa_icons"></i>Weekends: 08:00 a.m. - 18:00 p.m.</li>
+                </div>
+                <div class="col-lg-9 col-md-9 col-12">
+                  <h3 class="footer_col_heading">Locate us</h3>
+                  <div class="row">
+                    <!-- <div class="col-lg-6" style="border:1px solid blue; height: 100px; width: 45%; margin: 0px auto;"></div>
+                    <div class="col-lg-6" style="border:1px solid blue; height: 100px; width: 45%; margin: 0px auto;"></div> -->
+                    <iframe class="col-lg-5 col-md-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6033433799435!2d80.62336487520099!3d7.285890413834162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3689b47eb2aad%3A0xcd03fc54c7e63f05!2sBritish%20College%20of%20Applied%20Studies%20(BCAS%20Kandy%20Campus)!5e0!3m2!1sen!2slk!4v1687681127153!5m2!1sen!2slk" width="250" height="200" style="border:0; margin: 10px auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="col-lg-5 col-md-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.856288894602!2d79.84572608050196!3d6.907782300787194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25992b69b5ef9%3A0xb29f907171129cc7!2sBCAS%20Campus!5e0!3m2!1sen!2slk!4v1687681261469!5m2!1sen!2slk" width="250" height="200" style="border:0; margin: 10px auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+               
+                
+              </div>
+               
+              
+        
+        
+              
+                
+              
+            </div>
+
+
+
+
+    
+</body>
+</html>

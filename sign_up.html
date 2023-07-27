@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Fashion Sign Up Page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/all.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nzfashion_header_and_footer.css">
+    <style>
+     
+
+        .sign_up_form, .log_in_form{
+            background: radial-gradient(circle,rgba(8, 126, 139, .8) 20% , rgba(34, 51, 59,.8) 95%);
+            /* border: 1px solid #F9DB6D ; */
+            /* margin-top: 10%; */
+            display: block;
+            margin: auto;
+            border-radius: 30px;
+            /* height: 200px; */
+            /* height: 100px; */
+            padding: 10px 10px;
+            cursor:pointer;
+            transition: .6s;
+        }
+        .sign_up_form:hover, .log_in_form:hover{
+            opacity: .9;
+        }
+
+
+        .heading{
+            /* margin-top: 10px; */
+            color: white;
+            text-align: center;
+            font-weight: 400;
+        }
+        .textbox{
+            margin: 10px 20px;
+            width: 90%;
+            border-radius: 10px;
+            opacity: .8;
+            border: 0;
+            height: 35px;
+            font-size: 12px;
+        }
+        .textbox:hover{
+            opacity: .9;
+        }
+        .submit_button{
+            display: block;
+            width: 40%;
+            margin: auto;
+            border-radius: 10px;
+            transition: .4s;
+            border: 0;
+            background-color: black;
+            color: wheat;
+        }
+        .submit_button:hover{
+            transform: scale(.95);
+        }
+
+        .options{
+            
+            width: 80%;
+            /* background-color: ; */
+            border-radius: 5px;
+            display: block;
+            margin: 5px auto;
+            padding: 0px 30px;
+            transition: .5s;
+            cursor: pointer;
+            /* text-align: center; */
+        }
+        .options:hover{
+            transform: scale(.95);
+            opacity: .7;
+        }
+        .option_text{
+            font-weight: 900;
+            display: inline-block;
+            float: right;
+        }
+        
+
+        #option_facebook{
+            color: rgba(255, 255, 255,.8);
+            background-color: rgb(6, 8, 55);
+        }
+        #option_google{
+            background-color: white;
+            color: rgba(0, 0, 0,.8);
+        }
+        
+        #option_google img{
+            height: 18px;
+            width: 18px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+        label{
+            font-weight: 900;
+        }
+
+        .or{
+            margin-bottom: 0px;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .error_text{
+            font-size: 13px;
+            margin-top: 0;
+            text-align: center;
+            color: red;
+            margin-bottom: 2px;
+            font-weight: 900;
+            /* display: none; */
+        }
+        
+
+
+
+
+
+
+
+
+
+            /* CSS for small screens (up to 576px) */
+@media (max-width: 576px) {
+  
+    .submit_button{
+        font-size: 13px;
+    }
+    .option_text{
+        margin-top:2px ;
+        font-size: 13px;
+    }
+    label{
+        font-size: 15px;
+    }
+
+    .or{
+        font-size: 15px;
+        
+    }
+    
+    .sign_up_form{
+        margin-bottom: 20px;
+    }
+   
+    
+}
+
+/* CSS for medium screens (between 577px and 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+  
+    .submit_button{
+        font-size: 13px;
+    }
+    .option_text{
+        margin-top:2px ;
+        font-size: 13px;
+    }
+    label{
+        font-size: 15px;
+    }
+
+    .or{
+        font-size: 15px;
+        
+    }
+    .sign_up_form{
+        margin-bottom: 20px;
+    }
+  
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-5 col-md-5 col-10 sign_up_form">
+            <h2 class="heading">Sign Up</h2>
+
+
+            <label for="first_name">First Name: </label><br>
+            <input type="text" id="first_name" class="textbox" placeholder="First Name"> <br>
+            <p class="error_text" id="error_first_name"></p>
+
+            <label for="last_name">Last Name: </label> <br>
+            <input type="text" id="last_name" class="textbox" placeholder="Last Name"> <br>
+            <p class="error_text" id="error_last_name"></p>
+
+            <label for="email">Email Address: </label> <br>
+            <input type="text" id="email" class="textbox" placeholder="Email Address"> <br>
+            <p class="error_text" id="error_email"></p>
+
+            <label for="password">Password: </label> <br>
+            <input type="password" id="sign_up_password" class="textbox" placeholder="Password"> <br>
+            <p class="error_text" id="error_password"></p>
+
+            <label for="confirm_password">Confirm Password: </label> <br>
+            <input type="password" id="confirm_password" class="textbox" placeholder="Confirm Password"> <br>
+            <p class="error_text" id="error_confirm_password"></p>
+
+            <input type="submit" value="Create Account" class="submit_button" onclick="validateSignUp()">
+
+            <p class="or">Or,</p>
+
+           
+            <a class="options" id="option_facebook">
+                <i class="fa-brands fa-facebook-f option_logo" ></i>  <span class="option_text">Continue With Facebook</span>
+            </a>
+           
+
+            <a class="options" id="option_google">
+                <img src="images/google_logo.png"> <span class="option_text">Continue With Google</span>
+            </a>
+           
+
+
+           
+
+        
+           </div>
+
+           <div class="col-lg-5 col-md-5 col-10 log_in_form">
+            <h2 class="heading">Log In</h2>
+
+
+           <label for="first_name">User Name: </label><br>
+           <input type="text" id="user_name" class="textbox" placeholder="User Name"> <br>
+           <p class="error_text" id="error_user_name"></p>
+
+           <label for="login_password">Password:</label> <br>
+           <input type="password" id="login_password" class="textbox" placeholder="Password"> <br>
+           <p class="error_text" id="error_login_password"></p>
+
+           <input type="submit" value="Log In" class="submit_button" onclick="validateLogin()">
+           </div>
+           
+       </div>
+    </div>
+
+
+<!-- Your HTML code for the login form goes here -->
+
+<script>
+    function validateLogin() {
+      // Reset error messages and borders
+      document.querySelectorAll('.error_text').forEach(elem => elem.textContent = '');
+      document.querySelectorAll('.textbox').forEach(elem => elem.style.border = '1px solid #ced4da');
+    
+      // Get login form input values
+      const userName = document.getElementById('user_name').value;
+      const password = document.getElementById('login_password').value;
+    
+      // Define valid username and password combinations
+      const validCombinations = [
+        { username: 'John Doe', password: 'john1234' },
+        { username: 'Henry Clerk', password: 'henry1234' }
+      ];
+    
+      let isValid = false;
+    
+      // Check if the input username and password match any valid combinations
+      for (const combination of validCombinations) {
+        if (userName === combination.username && password === combination.password) {
+          isValid = true;
+          break;
+        }
+      }
+    
+      // Display error messages and highlight textboxes if necessary
+      if (!userName.trim()) {
+        document.getElementById('error_user_name').textContent = '* User Name cannot be empty';
+        document.getElementById('user_name').style.border = '1px solid red';
+        isValid = false;
+      } else if (!isValid) {
+        document.getElementById('error_user_name').textContent = '* Invalid User Name or Password';
+        document.getElementById('error_login_password').textContent = '* Invalid User Name or Password';
+        
+        document.getElementById('user_name').style.border = '1px solid red';
+        document.getElementById('login_password').style.border = '1px solid red';
+      }
+    
+      // If the form is valid, you can submit it or perform other actions here
+      if (isValid) {
+        // Submit the form or do something else
+        // For example, you can add:
+        // document.getElementById('loginForm').submit();
+        // Replace 'loginForm' with the ID of your form element.
+      }
+    }
+    </script>
+    
+
+<script>
+    function validateSignUp() {
+      // Reset error messages and borders
+      document.querySelectorAll('.error_text').forEach(elem => elem.textContent = '');
+      document.querySelectorAll('.textbox').forEach(elem => elem.style.border = '1px solid #ced4da');
+    
+      // Get form input values
+      const firstName = document.getElementById('first_name').value;
+      const lastName = document.getElementById('last_name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('sign_up_password').value;
+      const confirmPassword = document.getElementById('confirm_password').value;
+    
+      let isValid = true;
+    
+      // Validate first name
+      if (!firstName.trim()) {
+        document.getElementById('error_first_name').textContent = '* First Name cannot be empty';
+        document.getElementById('first_name').style.border = '1px solid red';
+        isValid = false;
+      } else if (!/^[A-Za-z]+$/.test(firstName)) {
+        document.getElementById('error_first_name').textContent = '* First Name can contain only letters';
+        document.getElementById('first_name').style.border = '1px solid red';
+        isValid = false;
+      }
+    
+      // Validate last name
+      if (!lastName.trim()) {
+        document.getElementById('error_last_name').textContent = '* Last Name cannot be empty';
+        document.getElementById('last_name').style.border = '1px solid red';
+        isValid = false;
+      } else if (!/^[A-Za-z]+$/.test(lastName)) {
+        document.getElementById('error_last_name').textContent = '* Last Name can contain only letters';
+        document.getElementById('last_name').style.border = '1px solid red';
+        isValid = false;
+      }
+    
+      // Validate email
+      if (!email.trim()) {
+        document.getElementById('error_email').textContent = '* Email Address cannot be empty';
+        document.getElementById('email').style.border = '1px solid red';
+        isValid = false;
+      } else if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email)) {
+        document.getElementById('error_email').textContent = '* Invalid Email Address';
+        document.getElementById('email').style.border = '1px solid red';
+        isValid = false;
+      }
+    
+      // Validate password
+      if (!password.trim()) {
+        document.getElementById('error_password').textContent = '* Password cannot be empty';
+        document.getElementById('sign_up_password').style.border = '1px solid red';
+        isValid = false;
+      } else if (password.length < 8 || !/\d/.test(password) && !/[!@#$%^&*]/.test(password)) {
+        document.getElementById('error_password').textContent = '* Password must be at least 8 characters long and contain at least 1 number or 1 special character';
+        document.getElementById('sign_up_password').style.border = '1px solid red';
+        isValid = false;
+      }
+    
+      // Validate confirm password
+      if (confirmPassword !== password) {
+        document.getElementById('error_confirm_password').textContent = '* Passwords do not match';
+        document.getElementById('confirm_password').style.border = '1px solid red';
+        isValid = false;
+      }
+    
+      // If the form is valid, you can submit it or perform other actions here
+      if (isValid) {
+        
+      }
+    }
+    </script>
+    
+    
+    
+
+
+    <!-- <script>
+
+
+        function validateSignUp(){
+            
+           var fname = document.getElementById('first_name').value;
+           var lname = document.getElementById('last_name').value;
+           var email = document.getElementById('email').value; 
+           
+           var pswrd = document.getElementById('password').value; 
+           
+           
+           var conPPswrd = document.getElementById('confirm_password').value; 
+          
+           firstname
+           if (fname == "" ){
+            document.getElementById('error_first_name').innerHTML = "*First Name Cannot Be Empty";
+           }
+            
+        }
+    </script> -->
+    
+</body>
+</html>
