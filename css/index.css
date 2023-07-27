@@ -1,0 +1,155 @@
+ /* index.html content styling */
+ .about_NZ_Fashion{
+  margin-top: 50px;
+    text-align: justify;
+    /* padding-top: 200px; */
+    /* margin-top: 200px; */
+    /* margin-top: 20px; */
+
+  }
+  /* .about_NZ_Fashion strong{
+   margin-left: auto;
+   text-align: center;
+   background-color: aqua;
+    visibility: hidden;
+  } */
+
+  .about_NZ_Fashion #sample{
+    text-align: center;
+  }
+
+  .our_services{
+    /* height: 400px; */
+    /* background: linear-gradient(to bottom, #FFB6C1 60%, white 40%); */
+    padding-top:0px;
+    color: black;
+    text-align: center;
+  }
+
+  .our_services_cards{
+    /* margin-bottom: 10px; */
+    color: black;
+    height: 400px;
+    border-radius: 20px;
+    border: 1px solid black;
+    /* display: block; */
+    margin: 0px auto 10px auto;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 50%, white 40%);
+    transition: 1s;
+  }
+
+  .our_services_cards:hover{
+    /* opacity: 100%; */
+    background-color: cornflowerblue;
+  }
+  /* .our_services img{
+    border-radius: 50%;
+  } */
+  
+
+  /* .service_icon{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 100px;
+    margin: 10px auto 20px auto;
+  } */
+ 
+  #nz_fashion_slogan{
+  text-align: center;
+  margin-bottom: 0;
+  }
+
+  .new_arrivals div{
+    border-radius: 5%;
+    margin: 1% auto 0% auto;
+  
+}
+.new_arrivals .row .new_arrivals_image{
+  /* visibility: hidden; */
+  margin: 0% auto;
+  border: 1px solid black;
+}
+
+#index_button{
+  /* background-color: #debd00; */
+  border-color: #708090 ;
+  color: black;
+  width: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NEW ARRIVALS */
+.product_next_previus_button {
+  /* margin-top: 12.5%; */
+  margin-top: 10%;
+  font-size: 40px;
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(0.8);
+}
+.product_next_previus_button:hover{
+  transform: scale(1);
+}
+#product2,
+#product3 {
+  display: none;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 1s ease-in-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+
+
+
+
+@media only screen and (max-width: 700px){
+
+  .product_next_previus_button{
+    transform: scale(0.7);
+  }
+
+
+
+
+}
+
+#img1,#img2,#img3{
+  width: 100%;
+  /* border: 1px solid red; */
+  /* transform: scale(1.5); */
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,83 @@
+ /* REVEAL FROM LEFT */
+ .reveal_left {
+  text-decoration:  none;
+    position: relative;
+    transform: translateX(-10%);
+    opacity: 0;
+    transition: 2s;
+    text-transform: none;
+  }
+  
+  .reveal_left.active {
+    /* text-decoration: underline white; */
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* RVEAL FROM RIGHT */
+  .reveal_right {
+    text-decoration: none;
+    position: relative;
+    transform: translateX(10%);
+    opacity: 0;
+    text-transform: none;
+    transition: 2s;
+  }
+  .reveal_right.active {
+    /* text-decoration: underline white; */
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+  /* RVEAL FROM TOP */
+  .reveal_top {
+    /* text-decoration: underline white; */
+    text-decoration: none;
+    text-transform: none;
+    position: relative;
+    transform: translateX(0px);
+    opacity: 0;
+    transition: 2s;
+  }
+  
+  .reveal_top.active {
+    /* text-decoration: underline white; */
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+
+   /* RVEAL FROM TOP */
+   .reveal_bottom {
+    /* text-decoration: underline white; */
+    text-decoration: none;
+    position: relative;
+    transform: translateX(0px);
+    opacity: 0;
+    transition: 2s;
+  }
+  
+  .reveal_bottom.active {
+    /* text-decoration: underline white; */
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+
+
+  /*ZOOM IN ZOOM OUT */
+  .zoom-effect {
+    transform: scale(0.8);
+    transition: transform 2s ease-in-out;
+  }
+  
+  .zoom-effect.zoomed {
+    /* position: relative;; */
+    /* margin-top: 80px; */
+    padding-top: 20px;
+    /* margin-bottom: 100px; */
+    transform: scale(1);
+  }
+  /* .zoom-effect.zoomed h1{
+    margin-top: 50px;
+    margin-left: 80px;
+  } */
+
